@@ -1,9 +1,7 @@
 name: MSDO
 on:
-  push:
-    branches:
-      - main
-
+  pull_request:
+    types: [opened, synchronize, reopened] 
 jobs:
   sample:
     name: Microsoft Security DevOps
